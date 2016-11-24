@@ -44,10 +44,19 @@ alert( 'Сумма: ' + sum );*/
 	}
 }*/
 
-function pow(x, n) {
+function fib(n){
+	var a=1,b=1,c=a+b;
+	for(i=3;i<=n;i++){
+		c=a+b;
+		a=b;
+		b=c;		
+	}
+	 	return c;
+}
+/*function pow(x, n) {
 	var result = x;
 	for (i = 1; i < n; i++) {
-		result *= x;
+		result *= x;		
 	}
 	return result;
 } 
@@ -55,4 +64,12 @@ var x = +prompt('vvedite chislo', '');
 var n = +prompt('vvedite stepen', '');
 if (n<=1) {
 	alert('Степень не поддерживается, введите n>1');
-} else alert( pow(x, n) );
+} //else alert( pow(x, n) );
+else */
+
+	
+/*var userName = prompt("Введите имя?", "Василий");
+var isTeaWanted = confirm("Вы хотите чаю?");
+
+alert( "Посетитель: " + userName );
+alert( "Чай: " + isTeaWanted );*/
