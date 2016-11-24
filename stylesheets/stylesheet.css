@@ -1,6 +1,17 @@
 * {
   box-sizing: border-box; }
 
+button {
+    background: #2E8CE3; /* Цвет фона */
+    padding: 7px 30px; /* Поля вокруг текста */
+    font-size: 13px; /* Размер шрифта */ 
+    font-weight: bold; /* Насыщенность шрифта */
+    color: #FFFFFF; /* Цвет шрифта */
+    text-align: center; /* Надпись на кнопке по центру */
+    border: solid 1px #73C8F0; /* Параметры рамки кнопки */ 
+    cursor: pointer; /* Изменение вида курсора при наведении*/
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -243,3 +254,28 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+/* pop-up */
+#pop-up {
+  height: 200px;
+  width: 400px;
+  border-radius: 10px;
+  border: 3px solid rgb(233, 254, 252);
+  background: #84A79D66;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -100px;
+  box-shadow: 3px 3px 4px rgba(0,0,0,.3);
+  display: none;
+}
+#pop-up #msg {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+#pop-up input {
+  margin: 20px auto;
+  display: block;
+}
